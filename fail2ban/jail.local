@@ -1,0 +1,5 @@
+[DEFAULT]
+
+bantime.increment = true
+
+ignoreip = 127.0.0.1/8 ::1 192.168.0.0/24 xxx.xxx.xxx.xxx/32
