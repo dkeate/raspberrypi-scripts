@@ -1,7 +1,8 @@
 [DEFAULT]
-action = %(banaction)s[name=%(___name__)s, port="%(port)s", protocol="%(protocol)s"]
-         ntfy[name=%(___name__)s]
+action = %(banaction)s[name=%(__name__)s, port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
+         ntfy[name=%(__name__)s]
 
 [sshd]
-action = %(banaction)s[name=%(___name__)s]
-         ntfy[name=%(___name__)s, ntfy_priority_ban=high]
+action = %(banaction)s[name=%(__name__)s, port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
+         ntfy[name=%(__name__)s, ntfy_priority_ban=high]
+
