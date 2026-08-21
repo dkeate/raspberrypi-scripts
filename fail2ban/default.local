@@ -1,0 +1,7 @@
+[DEFAULT]
+action = %(banaction)s[name=%(___name__)s, port="%(port)s", protocol="%(protocol)s"]
+         ntfy[name=%(___name__)s]
+
+[sshd]
+action = %(banaction)s[name=%(___name__)s]
+         ntfy[name=%(___name__)s, ntfy_priority_ban=high]
