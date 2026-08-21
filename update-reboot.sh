@@ -1,7 +1,7 @@
 #! /usr/bin/bash
 
 # update docker containers
-/home/pi/scripts/docker-update.sh
+/home/pi/raspberrypi-scripts/docker-update.sh
 sleep 5
 
 # update system
