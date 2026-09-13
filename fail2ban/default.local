@@ -5,4 +5,3 @@ action = %(banaction)s[name=%(__name__)s, port="%(port)s", protocol="%(protocol)
 [sshd]
 action = %(banaction)s[name=%(__name__)s, port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
          ntfy[name=%(__name__)s, ntfy_priority_ban=high]
-
