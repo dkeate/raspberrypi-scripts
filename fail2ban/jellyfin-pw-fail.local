@@ -6,6 +6,5 @@ logpath  = /home/pi/docker_data/jellyfin/config/log/log*.log
 maxretry = 5
 findtime = 3600
 bantime  = 31536000
-action   = iptables-multiport[name=PW-FAIL, port="http,https"]
-           iptables-multiport[name=PW-FAIL, port="http,https", chain="DOCKER-USER"]
+action   = iptables-multiport[name=PW-FAIL, port="http,https", chain="DOCKER-USER"]
            ntfy[name=PW-FAIL, ntfy_priority_ban=high]
