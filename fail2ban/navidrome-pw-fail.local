@@ -1,0 +1,11 @@
+[navidrome-pw-fail]
+enabled      = true
+port         = http,https
+filter       = navidrome-pw-fail
+backend      = systemd[journalflags=1]
+journalmatch = CONTAINER_NAME=my_app_container
+maxretry     = 5
+findtime     = 3600
+bantime      = 31536000
+action       = iptables-multiport[name=PW-FAIL, port="http,https", chain="DOCKER-USER"]
+               ntfy[name=PW-FAIL, ntfy_priority_ban=high]
